@@ -1,6 +1,6 @@
-public abstract class Duck implements FlyBehavior,QuackBehavior {    
-    FlyBehavior fb;
-    QuackBehavior qb;
+public abstract class Duck{    
+    protected FlyBehavior fb;
+    protected QuackBehavior qb;
 
     public void performQuack(){
         this.qb.quack();
