@@ -1,6 +1,7 @@
 public class SimuladorPatos {
     public static void main(String[] args) {
         Duck mallarDuck,redHead, decoyDuck, rubberDuck;
+
         mallarDuck = new MallardDuck();
         mallarDuck.showDuck();
 
