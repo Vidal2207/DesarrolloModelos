@@ -1,5 +1,5 @@
 public class MuteQuack implements QuackBehavior {
     public void quack(){
-        System.out.println("No hago ruido");
+        System.out.println("  - No hago ruido");
     };
 }

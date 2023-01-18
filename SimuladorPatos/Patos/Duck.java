@@ -6,7 +6,7 @@ public abstract class Duck{
         this.qb.quack();
     };
     public void swim(){
-        System.out.println("puedo flotar");
+        System.out.println("  - Puedo flotar");
     };
     public void display(){};
     public void performFly(){
@@ -17,6 +17,7 @@ public abstract class Duck{
         performFly();
         performQuack();
         swim();
+        System.out.println("-------------");
     };
     public void setQuackBehavior(QuackBehavior q){
         this.qb =q;
