@@ -5,8 +5,7 @@ public class ClasePrincipal {
         WeatherData clima = new WeatherData();
         CurrentCondition app1 = new CurrentCondition();
         clima.registerObserver(app1);
-        clima.measurementsChanged(5,1,4);
-        
+        clima.measurementsChanged(5,1,5);
         clima.setTemperature(2);
     }
 }
