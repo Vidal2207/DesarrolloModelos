@@ -4,8 +4,9 @@ public class ClasePrincipal {
     public static void main(String[]args){
         WeatherData clima = new WeatherData();
         CurrentCondition app1 = new CurrentCondition();
-        clima.measurementsChanged(5,1,4);
         clima.registerObserver(app1);
+        clima.measurementsChanged(5,1,4);
+        
         clima.setTemperature(2);
     }
 }
