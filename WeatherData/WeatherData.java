@@ -23,7 +23,7 @@ public class WeatherData implements Subject {
             obs.update(temperature, humidity, preassure);
         }
     }
-    public float gerTemperature(){
+    public float getTemperature(){
         return temperature;
     }
     public float getHumidity(){
@@ -35,6 +35,18 @@ public class WeatherData implements Subject {
     public void measurementsChanged(float t,float h,float p){
         temperature=t;
         humidity=h;
+        preassure=p;
+        notifiObserver();
+    }
+    public void setTemperature(float t){
+        temperature=t;
+        notifiObserver();
+    }
+    public void setHumidity(float h){
+        humidity=h;
+        notifiObserver();
+    }
+    public void setPressure(float p){
         preassure=p;
         notifiObserver();
     }
