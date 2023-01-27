@@ -12,10 +12,9 @@ public class CurrentCondition implements Observer,DisplayElement{
         humidity=h;
         preassure=p;
         display();
-        // System.out.println("Update");
     }
     public void display(){
-        System.out.println(temperature+" "+humidity+" "+preassure);
+        System.out.println("APP 1\nLa temperatura es de: "+temperature+" °C \nHumedad "+humidity+" %\nPresión "+preassure+" hPa");
     }
 
 }

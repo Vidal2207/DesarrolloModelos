@@ -1,32 +1,16 @@
 import Apps.CurrentCondition;
-
+import Apps.ForecastDisplay;
+import Interfaces.Observer;
 public class ClasePrincipal {
     public static void main(String[]args){
         WeatherData clima = new WeatherData();
-        CurrentCondition app1 = new CurrentCondition();
+        Observer app1,app2;
+        app1 = new CurrentCondition();
+        app2 = new ForecastDisplay();
+        clima.registerObserver(app2);
+        clima.measurementsChanged(21,32,1025);
         clima.registerObserver(app1);
-        clima.measurementsChanged(5,1,5);
-        clima.setTemperature(2);
+        clima.setTemperature(26);
+
     }
 }
-// public class SimuladorPatos {
-//     public static void main(String[] args) {
-//         Duck mallarDuck,redHead, decoyDuck, rubberDuck, ballorDuck;
-
-//         mallarDuck = new MallardDuck();
-//         mallarDuck.showDuck();
-
-//         redHead = new ReadHeadDuck();
-//         redHead.showDuck();
-
-//         decoyDuck = new DecoyDuck();
-//         decoyDuck.showDuck();
-
-//         rubberDuck = new RubberDuck();
-//         rubberDuck.showDuck();
-
-//         ballorDuck = new BallorDuck();
-//         ballorDuck.showDuck();
-
-//     }
-// }
