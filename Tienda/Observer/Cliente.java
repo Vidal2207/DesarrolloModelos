@@ -14,7 +14,7 @@ public class Cliente implements Observer{
         display();
     }
     public void display(){
-        System.out.println("********\nCorreo enviado a "+nameClient+"\n Producto: "+nombre+"\n Descripción: "+descripcion+"\n Precio: "+precio+"********\n");
+        System.out.println("********\nCorreo enviado a "+nameClient+"\n Producto: "+nombre+"\n Descripción: "+descripcion+"\n Precio: "+precio+"\n********\n");
         
     }
 }
