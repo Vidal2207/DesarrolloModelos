@@ -10,6 +10,7 @@ public class App {
         beverage2 = new Whip(beverage2);
         beverage2 = new Whip(beverage2);
         beverage2 = new Milk(beverage2);
+        beverage2 = new Mediano(beverage2);
         System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
 
         Beverage beverage3 = new HouseBlend();  

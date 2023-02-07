@@ -5,7 +5,7 @@ public class Grande extends SizeDecorator{
         this.beverage=beverage;
     }
 
-    public String getSize(){
+    public String getDescription(){
         return beverage.getDescription() + ", Tamaño graande";
     }
 

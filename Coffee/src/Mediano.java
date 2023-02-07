@@ -5,7 +5,7 @@ public class Mediano extends SizeDecorator {
         this.beverage=beverage;
     }
 
-    public String getSize(){
+    public String getDescription(){
         return beverage.getDescription() + ", Tamaño mediano";
     }
 
