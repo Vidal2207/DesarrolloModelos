@@ -27,6 +27,7 @@ public class BaseDatos{
     }
     public void DesconectarBD(){
         if(isConexion()){
+            Conexion=false;
             System.out.println("Base de datos desconectada......");
         }
         else{System.out.println("Error: Base de datos ya desconectada");}
